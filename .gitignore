@@ -1,0 +1,5 @@
+*.pdf
+scraps/
+screenshots/
+uploads/
+.DS_Store
