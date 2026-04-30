@@ -434,6 +434,35 @@ section {
 }
 #sf .close-cta strong { color:#fff; font-weight:700; }
 
+/* ── SLIDE COMPETENCIA ── */
+#scomp h2 { font-size:72px; font-weight:800; letter-spacing:-0.04em; margin-bottom:44px; }
+#scomp .comp-table { flex:1; display:flex; flex-direction:column; gap:0; border:1px solid var(--border); border-radius:24px; overflow:hidden; }
+#scomp .comp-head {
+  display:grid; grid-template-columns:320px 1fr;
+  background:rgba(26,106,255,0.1); border-bottom:1px solid var(--border);
+  padding:20px 40px; gap:40px;
+  font-size:22px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--blue);
+}
+#scomp .comp-row {
+  display:grid; grid-template-columns:320px 1fr;
+  padding:24px 40px; gap:40px; align-items:center;
+  border-bottom:1px solid var(--border);
+  transition:background 0.15s;
+}
+#scomp .comp-row:last-child { border-bottom:none; }
+#scomp .comp-row:hover { background:var(--subtle); }
+#scomp .comp-row.highlight { background:var(--bfill); border-color:var(--bdim); }
+#scomp .comp-name { font-size:28px; font-weight:800; color:#fff; }
+#scomp .comp-row.highlight .comp-name { color:var(--blue); font-size:30px; }
+#scomp .comp-desc { font-size:26px; color:var(--dim); line-height:1.45; }
+#scomp .comp-row.highlight .comp-desc { color:rgba(255,255,255,0.9); }
+#scomp .comp-tag {
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--bfill); border:1px solid var(--bdim);
+  border-radius:999px; padding:6px 20px;
+  font-size:20px; font-weight:700; color:var(--blue); margin-left:16px;
+}
+
 /* Team photo avatars */
 #s10 .avatar {
   width:200px; height:200px; border-radius:50%;
@@ -1801,6 +1830,50 @@ section {
   </div>
   <span class="snum">09 / 13</span>
 </section>
+<!-- ══════════════════════════════════════════
+     SLIDE COMPETENCIA Y DIFERENCIACIÓN
+══════════════════════════════════════════ -->
+<section id="scomp" data-screen-label="10 Competencia y Diferenciación">
+  <div class="glow g-tr"></div>
+  <div class="gtex"></div>
+  <div class="wm"><img src="logo_vuoo_white.svg" alt="Vuoo"></div>
+
+  <h2 style="margin-top:40px;">Competencia y diferenciación.</h2>
+
+  <div class="comp-table">
+    <div class="comp-head">
+      <span>Competidor</span>
+      <span>Por qué compite</span>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">SimpliRoute</div>
+      <div class="comp-desc">Optimización de rutas y tracking en Chile/Latam — el más directo</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">Beetrack / DispatchTrack</div>
+      <div class="comp-desc">Fuerte en última milla, seguimiento en vivo, POD</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">Drivin</div>
+      <div class="comp-desc">TMS SaaS para operaciones intensivas de transporte</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">QuadMinds</div>
+      <div class="comp-desc">Planificación, optimización, app conductor</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">Routal</div>
+      <div class="comp-desc">Rutas, GPS, ETAs, notificaciones</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-name">Onfleet</div>
+      <div class="comp-desc">Referente global de categoría</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
 
 <!-- ══ VUOO MKT SLIDES ══ -->
 
